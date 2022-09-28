@@ -1,4 +1,8 @@
-﻿namespace CSharpWinFormProjects
+﻿using System.Drawing;
+using System;
+using System.Windows.Forms;
+
+namespace CSharpWinFormProjects
 {
     partial class Form1
     {
@@ -28,10 +32,18 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.SuspendLayout();
+            // 
+            // Form1
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "Form1";
+            this.Name = "Form1";
+            this.Text = "Resume";
+            this.TransparencyKey = System.Drawing.Color.Aqua;
+            this.ResumeLayout(false);
+
         }
 
         #endregion

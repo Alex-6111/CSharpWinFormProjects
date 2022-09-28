@@ -15,6 +15,21 @@ namespace CSharpWinFormProjects
         public Form1()
         {
             InitializeComponent();
+            this.Shown += ShowMesBox;
+        }
+
+        private void ShowMesBox(object sender, EventArgs e)
+        {
+            string[] array = { "Привіт: Я Бекас Олександр", "Мені 21 рік", "Я студент КА ШАГ" };
+            int numSymbol = 0;
+            string caption;
+
+            for (int i = 0; i < array.Length; i++)
+            {
+                numSymbol += array[i].Length;
+                caption = (array.Length - 1 == i) ? $"MessageBox {i + 1}. Кількість символів - {numSymbol / array.Length}" : $"MessageBox {i + 1}";
+                MessageBox.Show(array[i], caption, MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
         }
     }
 }
