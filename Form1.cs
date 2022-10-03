@@ -46,7 +46,7 @@ namespace CSharpWinFormProjects
             if(e.Button == MouseButtons.Right)
             {
                 Text = $"Window size Width -> {ClientSize.Width}, Height -> {ClientSize.Height}";
-                Thread.Sleep(2000);
+                Thread.Sleep(1000);
             }
         }
         private void MousePosition(object sender, MouseEventArgs e)
