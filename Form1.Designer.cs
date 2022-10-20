@@ -49,7 +49,7 @@
             this.YearRadio.Size = new System.Drawing.Size(62, 17);
             this.YearRadio.TabIndex = 0;
             this.YearRadio.TabStop = true;
-            this.YearRadio.Text = "в годах";
+            this.YearRadio.Text = "роках";
             this.YearRadio.UseVisualStyleBackColor = true;
             
             this.groupBox1.Controls.Add(this.secondsRadio);
