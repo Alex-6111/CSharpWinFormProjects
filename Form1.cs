@@ -16,5 +16,16 @@ namespace CSharpWinFormProjects
         {
             InitializeComponent();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Form2 newform = new Form2();
+            newform.Show();
+        }
+
+        private void button2_MouseDown(object sender, MouseEventArgs e)
+        {
+            Close();
+        }
     }
 }
