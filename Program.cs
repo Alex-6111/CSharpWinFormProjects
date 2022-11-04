@@ -8,6 +8,7 @@ namespace CSharpWinFormProjects
 {
     internal static class Program
     {
+        public static string text = "";
         [STAThread]
         static void Main()
         {
