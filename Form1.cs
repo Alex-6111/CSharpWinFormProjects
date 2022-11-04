@@ -36,12 +36,11 @@ namespace CSharpWinFormProjects
                 using (StreamWriter sw = new StreamWriter(sf.FileName, false, System.Text.Encoding.Default))
                 {
                     sw.WriteLine(textBox1.Text);
-                    MessageBox.Show("Создано", "Сообщение", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    MessageBox.Show("Створено", "Message", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
             }
         }
 
-        //Открыть файл
         private void ToolStripMenuItem8_Click(object sender, EventArgs e)
         {
             OpenFileDialog open = new OpenFileDialog();
@@ -54,18 +53,14 @@ namespace CSharpWinFormProjects
                 }
             }
         }
-
-        //Сохранить файл
         private void ToolStripMenuItem9_Click(object sender, EventArgs e)
         {
             using (StreamWriter sw = new StreamWriter(Text, false, System.Text.Encoding.Default))
             {
                 sw.WriteLine(textBox1.Text);
-                MessageBox.Show("Сохранено", "Сообщение", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show("Збережено", "Message", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
         }
-
-        //Сохранить как
         private void ToolStripMenuItem10_Click(object sender, EventArgs e)
         {
             SaveFileDialog sf = new SaveFileDialog();
@@ -80,43 +75,37 @@ namespace CSharpWinFormProjects
                 using (StreamWriter sw = new StreamWriter(sf.FileName, false, System.Text.Encoding.Default))
                 {
                     sw.WriteLine(textBox1.Text);
-                    MessageBox.Show("Сохранено", "Сообщение", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    MessageBox.Show("Збережено", "Message", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
             }
         }
 
-        //Отмена действия
         private void ToolStripMenuItem2_Click(object sender, EventArgs e)
         {
             textBox1.Undo();
             textBox1.ClearUndo();
         }
-
-        //Вырезать
+      
         private void ToolStripMenuItem3_Click(object sender, EventArgs e)
         {
             textBox1.Cut();
         }
 
-        //Копировать
         private void ToolStripMenuItem4_Click(object sender, EventArgs e)
         {
             textBox1.Copy();
         }
 
-        //Вставить
         private void ToolStripMenuItem5_Click(object sender, EventArgs e)
         {
             textBox1.Paste();
         }
 
-        //Выделить все
         private void ToolStripMenuItem12_Click(object sender, EventArgs e)
         {
             textBox1.SelectAll();
         }
 
-        //Выбор шрифта
         private void ToolStripMenuItem14_Click(object sender, EventArgs e)
         {
             FontDialog fd = new FontDialog();
@@ -127,7 +116,6 @@ namespace CSharpWinFormProjects
             }
         }
 
-        //Цвет Шрифта
         private void ToolStripMenuItem15_Click(object sender, EventArgs e)
         {
             ColorDialog cd = new ColorDialog();
@@ -138,7 +126,6 @@ namespace CSharpWinFormProjects
             }
         }
 
-        //Цвет фона
         private void ToolStripMenuItem16_Click(object sender, EventArgs e)
         {
             ColorDialog cd = new ColorDialog();
